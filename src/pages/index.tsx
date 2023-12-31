@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import Link from 'next/link'
 import { MouseEventHandler } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,7 +22,7 @@ export default function Home() {
         <img src='https://media.tenor.com/7hPol1nMsc4AAAAi/tkthao219-bunny.gif' height={280} width={280} />
 
         <div className='actions'>
-          <button className='button-85'>Yes</button>
+          <Link className='button-85' href='/yay'>Yes</Link>
           <span className='no-btn-cover'>
             <button className='button-85 no-button' onMouseOver={onMouseOver} onClick={onMouseOver}>No</button>
           </span>

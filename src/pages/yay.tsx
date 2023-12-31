@@ -14,7 +14,7 @@ export default function Yay() {
   return (
     <main className='gradient'>
       <div className='container'>
-        <h2>Yay! Let's fix a date</h2>
+        <h2>Yay! Let&apos;s fix a date</h2>
         {/* <button onClick={sendEmail}>Send Email</button> */}
         <img src='https://media1.tenor.com/m/hZw60xfIvkYAAAAC/tkthao219-bubududu.gif' height={280} width={280} />
       </div>
