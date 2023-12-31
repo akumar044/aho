@@ -8,8 +8,8 @@ export default function Home() {
   const onMouseOver: MouseEventHandler<HTMLButtonElement> = (e) =>  {
     const button = e.currentTarget
 
-    const top = getRandomNumber(window.innerHeight);
-    const left = getRandomNumber(window.innerWidth);
+    const top = getRandomNumber(window.innerHeight - window.innerHeight/10);
+    const left = getRandomNumber(window.innerWidth - window.innerWidth/10);
     console.log(top, left)
     button.style.top = `${top}px`;
     button.style.left = `${left}px`
@@ -34,5 +34,5 @@ export default function Home() {
 
 const getRandomNumber = (num: number) => {
   const randomNumber = Math.random()
-  return Math.floor((randomNumber < 0.5 ? 0.5 + randomNumber : randomNumber)  * (num - 100));
+  return Math.floor((randomNumber < 0.5 ? 0.5 + randomNumber : randomNumber)  * (num));
 };
