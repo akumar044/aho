@@ -17,8 +17,8 @@ export default function Yay() {
     const now = new Date();
     now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
   
-    now.setMilliseconds(null)
-    now.setSeconds(null)
+    now.setMilliseconds(null as any)
+    now.setSeconds(null as any)
   
     setDefaultDate(now.toISOString().slice(0, -1));
   }, [])
